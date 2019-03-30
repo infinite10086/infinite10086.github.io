@@ -41,3 +41,8 @@ function createGSCanvas(img) {
     //返回原始的图像数据作为新灰度图片的源
     return canvas.toDataURL();
 }
+
+window.onload = function() {
+    var avatar = document.getElementById("avatar");
+    convertToGS(avatar);
+}
